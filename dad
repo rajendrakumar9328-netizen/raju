@@ -1,0 +1,20 @@
+class Dad
+{
+    void property()
+    {
+        System.out.println("HOUSE , LAND,BEACH..etc");
+    }
+}
+class Son extends Dad
+{
+    void show()
+    {
+        System.out.println("ROYAL ENFIELD");
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        Son obj=new Son();
+        obj.property();
+    }
+}
