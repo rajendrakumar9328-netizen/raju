@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class dhar {
+    int age;
+    String name;
+    dhar(int age, String name)
+{
+    this.age=age;
+    this.name=name;
+}
+void display()
+{
+    System.out.println(age +""+ name);
+}
+    public static void main(String[] args) {
+        dhar.obj=new dhar(6,"dharsan");
+        obj. display();
+    }
+}
