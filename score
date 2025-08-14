@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int gokulPower = scanner.nextInt();
+        int minorPower = scanner.nextInt();
+        int totalPower = scanner.nextInt();
+        int gokulScore = 0;
+        int minorScore = 0;
+        int turn = 0;
+
+        while (totalPower > 0) {
+            int gcdValue;
+
+            if (turn == 0) {  
+                gcdValue = gcd(gokulPower, totalPower);
+                gokulScore += gcdValue;
+                totalPower -= gcdValue;
+            } else {  // Minor's turn
+                gcdValue = gcd(minorPower, totalPower);
+                minorScore += gcdValue;
+                totalPower -= gcdValue;
+            }
+            turn = 1 - turn; // Switch turns
+        }
+
+        if (gokulScore > minorScore) {
+            System.out.println("Winner: Gokul");
+        } else if (minorScore > gokulScore) {
+            System.out.println("Winner: Minor");
+        } else {
+            System.out.println("It's a draw!");
+        }
+        scanner.close();
+    }
+}
