@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class coolie {
+void propert() {
+	System.out.println("house,lands");
+}
+class son extends coolie
+{
+	void show ()
+	{
+		System.out.println("bike");
+		
+	}}}
