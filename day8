@@ -1,0 +1,17 @@
+package Day8;
+public class statickeyword {
+int rollno = 55;
+String name = "Aakash";
+static String collegename = "Zion";
+void display(int a, String name)
+{
+System.out.println(a+" "+name+" "+collegename);
+}
+public static void main(String[] args) {
+statickeyword obj= new statickeyword();
+statickeyword.collegename="Mount";
+obj.display(55,"dharsan");
+obj.display(56, "dharan");
+obj.display(57, "duru");
+obj.display(58, "Durai");
+}}
