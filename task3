@@ -1,0 +1,14 @@
+String hotelname;
+String food;
+int price;
+public static void main(String agrs[]) {
+Task3 obj=new Task3();
+System.out.println(obj.hotelname);
+Task3 obj1=new Task3();
+System.out.println(obj1.price);
+Task3 obj3=new Task3();
+obj.price=50;
+obj.hotelname="maran";
+System.out.println(obj.price);
+System.out.println(obj.hotelname);}
+}
