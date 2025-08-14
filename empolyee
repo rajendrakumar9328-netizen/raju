@@ -1,0 +1,17 @@
+public class Employee {
+int rollno =55;
+String name = "dharsan";
+static String collegename = "Zion";
+private static Employee obj;
+void display(int a, String name) {
+System.out.println(a+" "+name+" "+collegename);
+}
+public static void show(int a) {
+Employee.collegename="Mount Zion";
+System.out.println(a+" "+collegename);
+}
+public static void main(String[] args) {
+Employee.show(55);
+Employee.obj=new Employee();
+obj.display(65,"dharsan");
+}}
